@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow } from 'enzyme';
 import App from './App'
-
+import {Timer} from './Components/Timer/Timer'
 
 describe('App',() =>{
   it('It should be  an <div>',() =>{
@@ -10,9 +10,16 @@ describe('App',() =>{
   })
 })
 
-describe('App 2',() =>{
-  it('It should Check the <header>',() =>{
-    const CheckHeader=shallow(<App/>)
-    expect(CheckHeader.find('header').length).toBeGreaterThanOrEqual(1)
+describe('App', () => {
+  it('Checking head tag in App',() =>{
+    const heading=shallow(<App/>)        
+    expect(heading.find('h1').text()).toContain('Timer App')
   })
+
+// Timer Comp
+it('chekcing Timer in App',() =>{
+  const timerComp=shallow(<App/>)
+  expect(timerComp.containsMatchingElement(<Timer/>)).toEqual(true)
+  })
+
 })
