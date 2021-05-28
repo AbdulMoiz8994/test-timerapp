@@ -9,3 +9,10 @@ describe('App',() =>{
     expect(container.find('div').length).toEqual(1)
   })
 })
+
+describe('App 2',() =>{
+  it('It should Check the <header>',() =>{
+    const CheckHeader=shallow(<App/>)
+    expect(CheckHeader.find('header').length).toBeGreaterThanOrEqual(1)
+  })
+})
