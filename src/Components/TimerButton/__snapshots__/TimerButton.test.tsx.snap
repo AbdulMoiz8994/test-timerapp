@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer Comp Button SnapShot 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Timer Comp Button Text 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  />
+</div>
+`;

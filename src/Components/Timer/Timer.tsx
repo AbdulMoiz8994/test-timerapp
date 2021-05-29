@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ScriptTarget } from 'typescript';
 import { TimerButton } from '../TimerButton/TimerButton'
 export const Timer = () => {
 
@@ -44,7 +45,13 @@ function stop(){
 
     //reset
 
-
+function Reset(){
+       setStatus(0)
+       setSeconds(0)
+       setMinute(0)
+       setHour(0)
+       clearInterval(interv)
+}
     return (
         <div>
             <span>{hour < 10 ? `0${hour}`: hour}</span>
@@ -57,6 +64,10 @@ function stop(){
             <TimerButton 
              buttonAction={stop}
              buttonValue={"Stop"}
+            />
+            <TimerButton
+            buttonAction={Reset}
+            buttonValue={"ReSet"}
             />
         </div>
     )

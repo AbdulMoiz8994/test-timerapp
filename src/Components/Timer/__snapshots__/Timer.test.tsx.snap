@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer SnapShot 1`] = `
+<div>
+  <span>
+    00
+  </span>
+  <span>
+    00
+  </span>
+  <span>
+    00
+  </span>
+  <TimerButton
+    buttonAction={[Function]}
+    buttonValue="Start"
+  />
+  <TimerButton
+    buttonAction={[Function]}
+    buttonValue="Stop"
+  />
+  <TimerButton
+    buttonAction={[Function]}
+    buttonValue="ReSet"
+  />
+</div>
+`;
