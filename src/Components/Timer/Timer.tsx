@@ -51,6 +51,9 @@ function Reset(){
        setHour(0)
        clearInterval(interv)
 }
+
+
+
     return (
         <div>
             <span>{hour < 10 ? `0${hour}`: hour}</span>
