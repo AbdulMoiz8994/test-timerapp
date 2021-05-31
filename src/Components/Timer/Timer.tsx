@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ScriptTarget } from 'typescript';
 import { TimerButton } from '../TimerButton/TimerButton'
 export const Timer = () => {
 

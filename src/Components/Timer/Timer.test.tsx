@@ -5,7 +5,7 @@ import {TimerButton} from '../TimerButton/TimerButton'
 describe('Timer',() =>{
     let timer: ShallowWrapper
     beforeEach(() => (timer=shallow(<Timer/>)))
-    it('Testing Timer Compnent',() =>{
+    fit('Testing Timer Compnent',() =>{
         expect(timer.find('div').length).toEqual(1)
     })
 

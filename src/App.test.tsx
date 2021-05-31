@@ -4,7 +4,7 @@ import App from './App'
 import {Timer} from './Components/Timer/Timer'
 
 describe('App',() =>{
-  it('It should be  an <div>',() =>{
+  fit('It should be  an <div>',() =>{
     const container=shallow(<App/>)
     expect(container.find('div').length).toEqual(1)
   })
